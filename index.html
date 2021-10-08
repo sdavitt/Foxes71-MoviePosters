@@ -20,24 +20,24 @@
     <div class="container">
         <div class="gallery">
             <div class="bond">
-                <img class="gallery-img img-fluid" id="casinoroyale" src="images/casinoroyale.jpg" alt="The Name's Bond... James Bond" onclick="event.preventDefault(); clickEvent(this.id, this.alt);">
+                <img class="gallery-img img-fluid" id="casinoroyale" src="images/casinoroyale.jpg" alt="The Name's Bond... James Bond" onclick="event.preventDefault(); clickEvent2(this.id);">
             </div>
             <div class="mozart">
-                <img class="gallery-img img-fluid" id="amadeus" src="images/amadeus.jpg" alt="Requiem, K. 626. Confutatis" onclick="event.preventDefault(); clickEvent(this.id, this.alt);">
+                <img class="gallery-img img-fluid" id="amadeus" src="images/amadeus.jpg" alt="Requiem, K. 626. Confutatis" onclick="event.preventDefault(); clickEvent2(this.id);">
             </div>
             <div class="cooking">
                 <div class="remy">
-                    <img class="gallery-img img-fluid" id="ratatouille" src="images/ratatouille.jpg" alt="Ratatouille (Original Motion Picture Soundtrack)" onclick="event.preventDefault(); clickEvent(this.id, this.alt);">
+                    <img class="gallery-img img-fluid" id="ratatouille" src="images/ratatouille.jpg" alt="Ratatouille (Original Motion Picture Soundtrack)" onclick="event.preventDefault(); clickEvent2(this.id);">
                 </div>
                 <div class="favreau">
-                    <img class="gallery-img img-fluid" id="chef" src="images/chef.jpg" alt="Oye Como Va (Live at el Jefe)" onclick="event.preventDefault(); clickEvent(this.id, this.alt);">
+                    <img class="gallery-img img-fluid" id="chef" src="images/chef.jpg" alt="Oye Como Va (Live at el Jefe)" onclick="event.preventDefault(); clickEvent2(this.id);">
                 </div>
             </div>
             <div class="pearl">
-                <img class="gallery-img img-fluid" id="pirates" src="images/pirates.jpg" alt="Hoist the Colours" onclick="event.preventDefault(); clickEvent(this.id, this.alt);">
+                <img class="gallery-img img-fluid" id="pirates" src="images/pirates.jpg" alt="Hoist the Colours" onclick="event.preventDefault(); clickEvent2(this.id);">
             </div>
             <div class="maximus">
-                <img class="gallery-img img-fluid" id="gladiator" src="images/gladiator.jpg" alt="Gladiator: 20th Anniversary Edition" onclick="event.preventDefault(); clickEvent(this.id, this.alt);">
+                <img class="gallery-img img-fluid" id="gladiator" src="images/gladiator.jpg" alt="Elysium" onclick="event.preventDefault(); clickEvent2(this.id);">
             </div>
         </div>
         <div class="header">
@@ -46,6 +46,9 @@
             </div>
             <div class="row justify-content-center">
                 <button onclick="stopSong();" class="btn btn-info">Stop Song</button>
+            </div>
+            <div class="row justify-content-center" id="loading">
+                <h3>Please wait, soundtracks loading...</h3>
             </div>
         </div>
     </div>
