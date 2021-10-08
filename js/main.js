@@ -10,8 +10,8 @@ using our client_id and client_secret
 Handles Spotify API authorization
 */
 const getToken = async () => {
-    const clientID = '616b3b0f6c8a4ae3984ad23275a44dfb';
-    const clientSecret = 'db06adcebbfa4bd7ad99dafc87e4b324';
+    const clientID = 'your id here';
+    const clientSecret = 'your secret here';
 
     const result = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
@@ -91,7 +91,7 @@ Foxes API custom scraping function
 returns list of preview_urls as JSON
 */
 let foxesAPIcall = async (tracklist) => {
-    let data = await fetch('http://localhost:5000/api/spotifyscraper', {
+    let data = await fetch('https://foxes71api.herokuapp.com/api/spotifyscraper', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
